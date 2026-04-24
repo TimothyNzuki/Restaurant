@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uinum Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-300 font-[times-new-romans] text-gray-800 ">
+
+    <!--Header-->
+    <header class=" bg-amber-600 shadow container justify-between flex items-center mx-auto rounded-[40px] text-black"">
+    
+        <div class="profile">
+            <img src="images/Uinum.jpg " alt="Profile Picture" class="w-32 h-32 rounded-full">
+       </div>
+
+        <!--Title-->
+    <h1 class="text-2xl font-bold">My Restaurant</h1>
+
+
+    <!--Navbar-->
+    <nav class="space-x-4">
+      <ul>
+         <li><a href="#menu" class="hover:text-red-600">Menu</a></li>
+         <li><a href="#about" class="hover:text-red-600">About</a></li>
+         <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+      </ul>
+     </nav>
+
+     
+     <!-- Hamburger button -->
+<button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+
+  <!-- Icon: three horizontal bars -->
+  <svg class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+
+<!-- Icon: The cross X-->
+ <svg id="close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"/>
+  </svg>
+</button>
+</header>
+    
+
+  <!-- Hero -->
+  <section class="bg-cover bg-center h-[400px] flex items-center justify-center text-white" style="background-image: url('https://picsum.photos/1200/400?food');">
+    <div class="bg-black bg-opacity-50 p-8 rounded">
+      <h2 class="text-4xl font-bold">Welcome to My Restaurant</h2>
+      <p class="mt-4 text-lg">Delicious meals, cozy atmosphere</p>
+    </div>
+  </section>
+
+ <!-- Menu -->
+  <section class="container mx-auto py-12">
+  <h2 class="text-3xl font-bold mb-6">Our Menu</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Pizza -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="https://picsum.photos/400/250?pizza" alt="Pizza" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Pizza</h3>
+        <p class="text-gray-600">Cheesy and fresh toppings</p>
+      </div>
+    </div>
+
+    <!-- Pasta -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="https://picsum.photos/400/250?pasta" alt="Pasta" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Pasta</h3>
+        <p class="text-gray-600">Rich sauces and herbs</p>
+      </div>
+    </div>
+
+    <!-- Salad -->
+    <div class="bg-white shadow rounded overflow-hidden">
+      <img src="https://picsum.photos/400/250?salad" alt="Salad" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg">Salads</h3>
+        <p class="text-gray-600">Crisp and healthy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- About -->
+  <section id="about" class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">About Us</h3>
+      <p class="max-w-2xl mx-auto text-gray-700">
+        We are passionate about serving fresh, delicious meals made with love.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+
+<div class="block bg-amber-700 mx-auto border border-cyan-700 max-w-md rounded p-4">
+  <form class="space-y-6">
+    <div>
+      <label for="name" class="block p-2 rounded">Your Name</label>
+      <input id="name" type="text" placeholder="Enter name.." 
+             class="w-full p-2 border border-yellow-200 bg-white mb-4 rounded" required>
+    </div>
+    <div>
+      <label for="email" class="block p-2 rounded">Email</label>
+      <input id="email" type="email" placeholder="Email" 
+             class="w-full p-2 border border-yellow-200 bg-white mb-4 rounded" required>
+    </div>
+    <div>
+      <label for="message" class="block p-2 rounded">Message</label>
+      <textarea id="message" placeholder="Your message..." 
+                class="w-full p-2 border border-yellow-200 bg-white mb-4 rounded" required></textarea>
+    </div>
+    <button type="submit" 
+            class="bg-red-600 text-white py-2 rounded hover:bg-blue-600">Send</button>
+  </form>
+</div>
+ 
+
+   <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center text-2xl font-[times-new-roman] py-4">
+    <p>&copy; 2026 My Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+
+
+</html>
